@@ -1,0 +1,11 @@
+drivers:
+  driver1:
+    id: 0x01
+    nodename: "LelfDriver"
+    toppic: "/control_wheel"
+    publish_queue_size: 20
+  driver2:
+    id: 0x02
+    nodename: "RightDriver"
+    toppic: "/control_wheel"
+    publish_queue_size: 20

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- line agv -->
+  <!-- <include file="$(find agvlinepkg)/launch/agvlineRun.launch">
+  </include> -->
+  <include file="$(find agvlinepkg)/launch/kitAgvLineRun.launch">
+  </include>
+  <!-- Motor Driver converter -->
+  <include file="$(find nav_converter)/launch/navConverter.launch">
+  </include>
+  <!-- GGM motor node -->
+   <include file="$(find ggm_motor)/launch/ggmMotorRun.launch">
+   </include>
+  <!-- <node pkg="agv_main" type="agv_main" name="agv_main" output="screen">      
+  </node> -->
+</launch>

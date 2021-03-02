@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="driver_name"        default="ggm"/>
+  <node pkg="ggm_motor" type="ggm_motor_node" name="driver_node" output="screen">
+    <param name="baudrate" type="int" value="19200"/> 
+    <param name="port" type="str" value="/dev/USB_MD200"/>
+    <param name="id" type="int" value="1"/>
+  </node>
+
+</launch>

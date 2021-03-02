@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+  <rosparam command="load" file="$(find agv_define)/param/robot_param/conceptAgv.yaml" /> 
+  <node pkg="nav_converter" type="nav_converter" name="nav_converter">      
+  </node>
+
+</launch>

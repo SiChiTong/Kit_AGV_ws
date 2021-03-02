@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <rosparam command="load" file="$(find agv_define)/param/robot_param/detalInfomation.yaml" />
+
+  <node pkg="delta" type="delta_node" name="plc_control" output="screen"> 
+  </node>
+
+</launch>

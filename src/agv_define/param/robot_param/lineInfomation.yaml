@@ -1,0 +1,14 @@
+error_max: 0.3
+conceptForward:
+    V: 1                         # Forward velocity (ie meters per second)*
+    Lm: 0.344                                  # The distance from the center of the wheel axis to the center forward line sensor 0.344
+    PresentRunning: 100.0                         # Percent speed normal % 
+    PresentSlow: 32.0                             # Percent speed slow %
+    K: 1                                    # He so K 2
+
+conceptBackward:
+    V: -1                                    # Backward velocity (ie meters per second)*
+    Lm: 0.344                                 # The distance from the center of the wheel axis to the center forward line sensor
+    PresentRunning: 100                         # Percent speed normal %
+    PresentSlow: 32                             # Percent speed slow %
+    K: 1                                    # He so K 2

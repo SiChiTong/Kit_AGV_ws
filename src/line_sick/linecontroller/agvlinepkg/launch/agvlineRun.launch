@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch> 
+
+<!-- sick_line_guidance: global configuration -->
+<include file="$(find sick_line_guidance)/launch/sick_line_guidance.launch">
+  <arg name="yaml" value="sick_line_guidance_mls.yaml"/>
+</include>
+
+<!-- Global yaml-file -->
+  <rosparam command="load" file="$(find agv_define)/param/robot_param/conceptAgv.yaml" />           
+  <rosparam command="load" file="$(find agv_define)/param/robot_param/lineInfomation.yaml" />           
+  <node pkg="agvlinepkg" type="agvLineAction" name="agvline" output="screen">
+  </node>
+</launch>

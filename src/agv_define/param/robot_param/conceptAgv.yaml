@@ -1,0 +1,5 @@
+L: 0.510                    # Distance between two wheels
+R: 0.075                    # wheel radius (in meters per radian)
+K: 30                       # He so banh rang dong co
+SpeedMotorMax: 3000         # Speed maximum of moter before gear
+SpeedMotorMin: 50           # Speed maximum of moter before gear
